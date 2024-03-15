@@ -8,7 +8,6 @@ let h3=document.querySelector("h3");                                            
 let high=[];                                                                                             //for storing last highest score in array
 let highest=0;                                                                                           //gives highest value from high(array) as a highest score
 
-
 document.addEventListener("keypress",function(){                                                         //added keyboard event of "keypress" to start the game
     if(started==false){
         started=true;                                                                                   //started value changed to start game
@@ -16,12 +15,10 @@ document.addEventListener("keypress",function(){                                
     }
 }) 
 
-
 function levelup(){                                                                                       //function which level up the game  
     userSeq=[];                                                                                          //to tracj theuser input from starting 
     level++;                                                                                            //increment of level value
     h2.innerText=`level ${level}`;                                                                      //innertext of h2 changed with increased value of level
-
 
     //random color
     let randInd=Math.floor(Math.random()*3);                                                            //to generate ramdom number between 0 to 3
